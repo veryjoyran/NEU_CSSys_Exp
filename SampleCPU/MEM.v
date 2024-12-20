@@ -1,5 +1,13 @@
 `include "lib/defines.vh"
 
+
+// 访问内存操作
+// 可能从EX/MEM流水线寄存器中得到地址读取数据寄存器，并将数据存入MEM/WB流水线寄存器。
+
+// 接收并处理访存的结果，并选择写回结果
+// 对于需要访存的指令在此段接收访存结果
+
+
 module MEM(
     input wire clk,
     input wire rst,
